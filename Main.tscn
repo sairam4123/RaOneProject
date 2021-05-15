@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World.tscn" type="PackedScene" id=1]
+
+[node name="Main" type="Node"]
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="Game" type="Spatial" parent="."]
+
+[node name="World" parent="Game" instance=ExtResource( 1 )]
